@@ -1,0 +1,30 @@
+.content-area{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.appointment_form{
+  width: 100%;
+}
+.appointment_form p {
+
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: #343434;
+
+}
+.appointment_form input[type="text"], input[type="time"], input[type="email"], input[type="tel"], input[type="number"], input[type="url"], input[type="password"], input[type="date"], textarea, select {
+
+    padding: 15px 25px;
+    width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    margin-top: 13px;}
+  .appointment_form  input[type="date"]:before{
+    color:lightgray;
+    content:attr(placeholder);
+}
+
+.appointment_form input[type="date"].full:before {
+    color:black;
+    content:""!important;
+}
