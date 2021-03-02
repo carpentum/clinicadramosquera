@@ -32,66 +32,52 @@
           </a>
           <ul class="treeview-menu">
             <li class="treeview">
-              <a href="#"><i class="fa fa-circle-o"></i> Patologías
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
+              <a href="/patologias"><i class="fa fa-circle-o"></i> Patologías
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Faciales</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Corporales</a></li>
-              </ul>
             </li>
             <li class="treeview">
-              <a href="#"><i class="fa fa-circle-o"></i> Tratamientos
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
+              <a href="/tratamientos"><i class="fa fa-circle-o"></i> Tratamientos
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Faciales</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Corporales</a></li>
-              </ul>
             </li>
           </ul>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="/blog">
             <i class="fa fa-edit"></i> <span>Blog</span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="/testimonios">
             <i class="fa fa-edit"></i> <span>Testimonios</span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="/promociones">
             <i class="fa fa-edit"></i> <span>Promociones</span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="/preguntas-frecuentes">
             <i class="fa fa-edit"></i> <span>Preguntas frecuentes</span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="/sobre-mi">
             <i class="fa fa-edit"></i> <span>Sobre mi</span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="/nuestro-equipo">
             <i class="fa fa-edit"></i> <span>Nuestro equipo</span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="/clinica">
             <i class="fa fa-edit"></i> <span>Clínica</span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="/contacto">
             <i class="fa fa-edit"></i> <span>Contacto</span>
           </a>
         </li>

@@ -68,6 +68,8 @@ class SiteController extends Controller
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
+                'layout' => 'mainadminlte',
+                'view' => '@app/views/adminlte/error.tpl'
             ],
         ];
     }
