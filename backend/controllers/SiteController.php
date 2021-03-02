@@ -6,6 +6,9 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
+use frontend\models\PasswordResetRequestForm;
+use frontend\models\ResendVerificationEmailForm;
+use common\models\ResetPassword;
 
 /**
  * Site controller
@@ -30,6 +33,21 @@ class SiteController extends Controller
                         'actions' => ['logout', 'index'],
                         'allow' => true,
                         'roles' => ['@'],
+                    ],
+                    [
+                        'actions' => ['request-password-reset'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['resend-verification-email'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['reset-password'],
+                        'allow' => true,
+                        'roles' => ['?'],
                     ],
                 ],
             ],
@@ -83,9 +101,9 @@ class SiteController extends Controller
             return $this->goBack();
         } else {
             $model->password = '';
-
-            return $this->render('login', [
-                'model' => $model,
+            $this->view->params['body_class'] = 'login-page';
+            return $this->render('/adminlte/login.tpl', [
+                'model' => $model
             ]);
         }
     }
@@ -100,5 +118,90 @@ class SiteController extends Controller
         Yii::$app->user->logout();
 
         return $this->goHome();
+    }
+
+    /**
+     * Requests password reset.
+     *
+     * @return mixed
+     */
+    public function actionRequestPasswordReset()
+    {
+        $this->layout = 'blank';
+        
+        $model = new PasswordResetRequestForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if ($model->sendEmail()) {
+                Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
+
+                return $this->goHome();
+            } else {
+                Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for the provided email address.');
+            }
+        }
+        $this->view->params['body_class'] = 'login-page';
+        $this->getView()->title = "Request password reset";
+        $this->getView()->params['breadcrumbs'][] = $this->getView()->title;
+        return $this->render('/adminlte/requestPasswordResetToken.tpl', [
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * Resend verification email
+     *
+     * @return mixed
+     */
+    public function actionResendVerificationEmail()
+    {
+        $this->layout = 'blank';
+        
+        $model = new ResendVerificationEmailForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if ($model->sendEmail()) {
+                Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
+                return $this->goHome();
+            }
+            Yii::$app->session->setFlash('error', 'Sorry, we are unable to resend verification email for the provided email address.');
+        }
+
+
+        $this->view->params['body_class'] = 'login-page';
+        $this->getView()->title = "Resend verification email";
+        $this->getView()->params['breadcrumbs'][] = $this->getView()->title;
+        return $this->render('/adminlte/resendVerificationEmail.tpl', [
+            'model' => $model
+        ]);
+    }
+
+    /**
+     * Resets password.
+     *
+     * @param string $token
+     * @return mixed
+     * @throws BadRequestHttpException
+     */
+    public function actionResetPassword($token)
+    {
+        $this->layout = 'blank';
+        
+        try {
+            $model = new ResetPassword($token);
+        } catch (InvalidArgumentException $e) {
+            throw new BadRequestHttpException($e->getMessage());
+        }
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
+            Yii::$app->session->setFlash('success', 'New password saved.');
+
+            return $this->goHome();
+        }
+
+        $this->view->params['body_class'] = 'login-page';
+        $this->getView()->title = "Reset password";
+        $this->getView()->params['breadcrumbs'][] = $this->getView()->title;
+        return $this->render('/adminlte/resetPassword.tpl', [
+            'model' => $model,
+        ]);
     }
 }

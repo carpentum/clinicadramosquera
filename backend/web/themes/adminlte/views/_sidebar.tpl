@@ -1,3 +1,6 @@
+{use class="yii\bootstrap\NavBar"}
+{use class="yii\bootstrap\Nav"}
+
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">

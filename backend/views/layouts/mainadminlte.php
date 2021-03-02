@@ -9,6 +9,7 @@ use backend\assets\AppAsset;
 use common\widgets\Alert;
 use yii\widgets\ActiveForm;
 use yii\helpers\Url;
+use yii\bootstrap\Nav;
 
 AppAsset::register($this);
 ?>
@@ -33,8 +34,20 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini <?= ! empty($body_class) ? $body_class : ''?>">
 <?php $this->beginBody() ?>
+    
+    
+    
+    
+        <?= Breadcrumbs::widget([
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]) ?>
+    
+    
+    
+    
+        <?= Alert::widget() ?>
         <?= $content ?>
 <?php $this->endBody() ?>
 <script>

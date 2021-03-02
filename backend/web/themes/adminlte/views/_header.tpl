@@ -1,3 +1,5 @@
+{use class="yii\helpers\Html"}
+
 <header class="main-header">
     <!-- Logo -->
     <a href="index2.html" class="logo">
@@ -34,6 +36,24 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
+    {if (Yii::$app->user->isGuest)}
+        {$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']]}
+    {else}
+        {*$menuItems[] = '<li>'
+            . Html::beginForm(['/site/logout'], 'post')
+            . Html::submitButton(
+                'Logout (' . Yii::$app->user->identity->username . ')',
+                ['class' => 'btn btn-link logout']
+            )
+            . Html::endForm()
+            . '</li>';*}
+            {Html::beginForm(['/site/logout'], 'post')}
+            {Html::submitButton(
+                'Logout ('|cat:Yii::$app->user->identity->username|cat:')',
+                ['class' => 'btn btn-link logout']
+            )}
+            {Html::endForm()}
+    {/if}
                   <a href="#" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
