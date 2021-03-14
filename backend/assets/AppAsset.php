@@ -35,12 +35,11 @@ class AppAsset extends AssetBundle
         'themes/adminlte/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js',
         'themes/adminlte/assets/plugins/fastclick/fastclick.js',
         'themes/adminlte/assets/js/adminlte.min.js',
-        'themes/adminlte/assets/js/pages/dashboard.js',
         'themes/adminlte/assets/js/demo.js',
 
-        'themes/adminlte/assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js',
-        'themes/adminlte/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js',
-        'themes/adminlte/assets/plugins/jquery-knob/jquery.knob.min.js',
+        //'themes/adminlte/assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js',
+        //'themes/adminlte/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js',
+        //'themes/adminlte/assets/plugins/jquery-knob/jquery.knob.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

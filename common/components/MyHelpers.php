@@ -129,27 +129,35 @@ class MyHelpers
         
     }
     
-    public static function getContents($id = '', $id_category = '', $published = true) {
+    public static function getContents($id = '', $id_category = '', $published = true, $id_type) {
         
         $contents = [];
         
-        $query =  Contents::find();
+        $query = new \yii\db\Query;
+        $query->select('c.*, cc.name as category_name')
+            ->from('contents c');
         
         if ( ! empty($published) ) {
-            $query->where(['status' => News::STATUS_PUBLISHED]);
+            $query->where(['c.status' => News::STATUS_PUBLISHED]);
         }
         
-        $query->orderBy('name DESC');
+        $query->orderBy('c.name DESC');
         
         if ( ! empty($id) ) {
-            $query->where(['id' => $id]);
+            $query->where(['c.id' => $id]);
         }
         
         if ( ! empty($id_category) ) {
-            $query->where(['id_category' => $id_category]);
+            $query->where(['c.id_category' => $id_category]);
+        }
+        
+        if ( ! empty($id_type) ) {
+            $query->where(['c.id_type' => $id_type]);
         }
                 
-        $contents = $query->all();
+        $contents = $query
+                ->leftJoin('contents_categories cc', 'c.id_category = cc.id')
+                ->all();
         
         return $contents;
         

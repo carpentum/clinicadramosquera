@@ -5,3 +5,7 @@
 #login-form .checkbox label, .radio label {
     padding-left:0;
 }
+
+.w-100 {
+    width:100%;
+}

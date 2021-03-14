@@ -23,6 +23,15 @@ use Yii;
  */
 class Contents extends \yii\db\ActiveRecord
 {
+    CONST TYPE_PATHOLOGY = 1;
+    CONST TYPE_TREATMENT = 2;
+    
+    CONST CAT_FACIAL_TREATMENT = 1;
+    CONST CAT_BODY_TREATMENT = 2;
+    CONST CAT_OBESITY_NUTRITION = 3;
+    CONST CAT_FACIAL_PATHOLOGY = 4;
+    CONST CAT_BODY_PATHOLOGY = 5;
+    
     /**
      * {@inheritdoc}
      */
@@ -53,16 +62,16 @@ class Contents extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'dateposted' => 'Dateposted',
-            'status' => 'Status',
-            'id_type' => 'Id Type',
-            'id_category' => 'Id Category',
-            'image' => 'Image',
-            'thumb_image' => 'Thumb Image',
-            'video' => 'Video',
-            'name' => 'Name',
-            'summary' => 'Summary',
-            'description' => 'Description',
+            'dateposted' => 'Fecha de publicación',
+            'status' => 'Estado',
+            'id_type' => 'Tipo',
+            'id_category' => 'Categoría',
+            'image' => 'Imagen',
+            'thumb_image' => 'Imagen miniatura',
+            'video' => 'Vídeo',
+            'name' => 'Nombre',
+            'summary' => 'Resumen',
+            'description' => 'Descripción',
             'title_meta' => 'Title Meta',
             'description_meta' => 'Description Meta',
         ];
