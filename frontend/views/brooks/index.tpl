@@ -261,7 +261,7 @@
         <div class="row">
             <div class="col-md-7">
                 <div class="flw-bg">
-                    <img src="themes/brooks/assets/img/resource/women-img.png">
+                    <img src="themes/brooks/assets/img/logo-home.png">
                 </div>
             </div>
             <div class="col-md-5">
@@ -351,7 +351,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="team-img">
-                    <img src="themes/brooks/assets/img/resource/team-img.png" alt="">
+                    <img src="themes/brooks/assets/img/team/team_clinicadramosquera.png" alt="Equipo Clínica Doctora Mosquera">
                 </div>
             </div>
         </div>

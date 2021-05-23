@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-4 col-sm-4 hidden-xs">
                 <div class="image_thumb ">
-                    <img src="themes/brooks/assets/img/about/about_bea.jpg" alt="">
+                    <img src="themes/brooks/assets/img/about/about_dramosquera.png" alt="">
                 </div>
             </div>
         </div>

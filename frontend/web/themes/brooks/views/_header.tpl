@@ -45,7 +45,7 @@
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="/sobre-mi">Sobre mi</a></li>
+                                <li><a href="/sobre-nosotros">Sobre nosotros</a></li>
                                 <li><a href="/nuestro-equipo">Nuestro equipo</a></li>
                                 <li><a href="/clinica">Clínica</a></li>
                                 <!--<li><a href="gallery-lightbox.html">Clínica 2</a></li>-->
@@ -62,13 +62,13 @@
                                         {foreach item=type from=$menu_contents['types']}
                                             {if $type->name == 'Patología'}
                                                 {foreach item=category from=$menu_contents['categories']}
-                                                    {if $category->id_type == $type->id}
+                                                    {if $category['id_type'] == $type->id}
                                                         <div class="col-menu">
                                                             <h6 class="title">{$category['name']}</h6>
                                                             <div class="content">
                                                                 <ul class="menu-col">
                                                                     {foreach item=element from=$menu_contents['elements']}
-                                                                        {if $element->id_category == $category->id}
+                                                                        {if $element['id_category'] == $category->id}
                                                                             <li><a href="/patologia/{MyHelpers::slugify($element['name'])}-{$element['id']}">{$element['name']}</a></li>
                                                                         {/if}
                                                                     {/foreach}
@@ -95,13 +95,13 @@
                                         {foreach item=type from=$menu_contents['types']}
                                             {if $type->name == 'Tratamiento'}
                                                 {foreach item=category from=$menu_contents['categories']}
-                                                    {if $category->id_type == $type->id}
+                                                    {if $category['id_type'] == $type->id}
                                                         <div class="col-menu">
                                                             <h6 class="title">{$category['name']}</h6>
                                                             <div class="content">
                                                                 <ul class="menu-col">
                                                                     {foreach item=element from=$menu_contents['elements']}
-                                                                        {if $element->id_category == $category->id}
+                                                                        {if $element['id_category'] == $category->id}
                                                                             <li><a href="/patologia/{MyHelpers::slugify($element['name'])}-{$element['id']}">{$element['name']}</a></li>
                                                                         {/if}
                                                                     {/foreach}

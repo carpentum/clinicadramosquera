@@ -55,7 +55,7 @@ return [
                 'promocion/<id:.*>'=>'content/promociones',
                 'preguntas-frecuentes'=>'content/faq',
                 'pregunta-frecuente/<id:.*>'=>'content/faq',
-                'sobre-mi'=>'content/sobremi',
+                'sobre-nosotros'=>'content/sobrenosotros',
                 'nuestro-equipo'=>'content/nuestroequipo',
                 'miembro-equipo/<id:.*>'=>'content/miembroequipo',
                 'clinica'=>'content/clinica',

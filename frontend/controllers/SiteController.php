@@ -172,7 +172,7 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionSobremi()
+    public function actionSobrenosotros()
     {
         $menu_contents = MyHelpers::getMenuContents();
         
@@ -184,11 +184,11 @@ class SiteController extends Controller
         
         $content = MyHelpers::getStaticContent('about');
         
-        return $this->render('/brooks/sobre-mi.tpl', [
+        return $this->render('/brooks/sobre-nosotros.tpl', [
             'menu_contents' => $menu_contents,
             'content' => $content,
-            'title' => 'Sobre mí',
-            'url'   => '/sobre-mi',
+            'title' => 'Sobre nosotros',
+            'url'   => '/sobre-nosotros',
         ]);
     }
 

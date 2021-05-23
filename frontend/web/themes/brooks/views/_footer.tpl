@@ -86,7 +86,7 @@
                         <div class="link_widget">
                             <ul>
                                 <li><a href="/">- Inicio</a></li>
-                                <li><a href="/sobre-mi">- Sobre mí</a></li>
+                                <li><a href="/sobre-nosotros">- Sobre mí</a></li>
                                 <li><a href="/nuestro-equipo">- Equipo</a></li>
                                 <li><a href="/preguntas-frecuentes">- FAQ</a></li>
                                 <li><a href="/blog">- Blog</a></li>

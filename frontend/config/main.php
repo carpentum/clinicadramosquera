@@ -56,7 +56,7 @@ return [
             'enablePrettyUrl' => true, //Set to false to access gii model generator
             'showScriptName' => false,
             'rules' => [
-                'sobre-mi'=>'site/sobremi',
+                'sobre-nosotros'=>'site/sobrenosotros',
                 'nuestro-equipo'=>'site/equipo',
                 'clinica'=>'site/clinica',
                 'contacto'=>'site/contact',

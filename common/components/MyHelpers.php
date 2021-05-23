@@ -129,7 +129,7 @@ class MyHelpers
         
     }
     
-    public static function getContents($id = '', $id_category = '', $published = true, $id_type) {
+    public static function getContents($id = '', $id_category = '', $published = true, $id_type = '') {
         
         $contents = [];
         

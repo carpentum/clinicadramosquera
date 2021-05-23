@@ -46,6 +46,10 @@ section.non-index, div.non-index, .row.non-index {
     right: -93px;
 }
 
+.why-choose-section .why-point {
+    padding-top: 0;
+}
+
 @media screen and (min-width: 993px) {
     .megamenu-content.patologias {
         left: 190px !important;
