@@ -555,16 +555,16 @@ i:before {
   z-index: 1;
 }
 .service__image_1 {
-  background: url(../img/resource/service-img-1.jpg);
+  background: url(../img/resource/service-body.jpg);
 }
 .service__image_2 {
-  background: url(../img/resource/service-img-2.jpg);
+  background: url(../img/resource/service-face.jpg);
 }
 .service__image_3 {
-  background: url(../img/resource/service-img-3.jpg);
+  background: url(../img/resource/service-pronokal.jpg);
 }
 .service__image_4 {
-  background: url(../img/resource/service-img-4.jpg);
+  background: url(../img/resource/service-pecho.jpg);
 }
 .custom-border-gap.bg-image {
   position: absolute;
@@ -1055,7 +1055,7 @@ i:before {
   font-size: 16px;
   line-height: 26px;
   color: #ab3442;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   padding: 30px 33px 30px 10px;
   float: none;
   font-weight: 600;
@@ -1085,7 +1085,7 @@ i:before {
 }
 .why-choose-section .why-point li p{
   font-size: 16px;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   font-weight: normal;
 }
 .why-choose-section .why-point li a {
@@ -1156,7 +1156,7 @@ i:before {
   float: left;
 }
 .testimonials .testimonial_bx .text-box{
-  width: 68%;
+  width: 100%;
   float: left;
   background-color: #FFF;
   height: 422px;

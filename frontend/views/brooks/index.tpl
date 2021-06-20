@@ -8,15 +8,15 @@
         <div class="owl-carousel">
             <div class="item">
                 <div class="slide">
-                    <img src="themes/brooks/assets/img/home-slider/slide-4.jpg" alt="">
+                    <img src="themes/brooks/assets/img/home-slider/slide-01.jpg" alt="">
                     <div class="slide-overlay"></div>
                 </div>
                 <div class="container">
                     <div class="carousel-captions caption-align-center">
                         <div class="caption-align-center-wrap">
-                            <span class="small-heading">WE CARE YOUR SKIN</span>
-                            <h2 class="heading color">change Your Life<br>Permanantly</h2>
-                            <a href="#" class="btn btn-outline  lighter"> read more</a>
+                            <span class="small-heading">CUIDAMOS DE TU PIEL</span>
+                            <h2 class="heading color">cambia tu vida<br>para siempre</h2>
+                            <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
                         </div>
                     </div>
                 </div>
@@ -24,15 +24,15 @@
 
             <div class="item">
                 <div class="slide">
-                    <img src="themes/brooks/assets/img/home-slider/slide-5.jpg" alt="">
+                    <img src="themes/brooks/assets/img/home-slider/slide-02.jpg" alt="">
                     <div class="slide-overlay"></div>
                 </div>
                 <div class="container">
                     <div class="carousel-captions caption-align-center">
                         <div class="caption-align-center-wrap">
-                            <span class="small-heading">WE CARE YOUR SKIN</span>
-                            <h2 class="heading color">change Your Life<br>Permanantly</h2>
-                            <a href="#" class="btn btn-outline  lighter"> read more</a>
+                            <span class="small-heading">CUIDAMOS DE TU PIEL</span>
+                            <h2 class="heading color">cambia tu vida<br>para siempre</h2>
+                            <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
                         </div>
                     </div>
                 </div>
@@ -40,15 +40,15 @@
 
             <div class="item">
                 <div class="slide">
-                    <img src="themes/brooks/assets/img/home-slider/slide-6.jpg" alt="">
+                    <img src="themes/brooks/assets/img/home-slider/slide-03.jpg" alt="">
                     <div class="slide-overlay"></div>
                 </div>
                 <div class="container">
                     <div class="carousel-captions caption-align-center">
                         <div class="caption-align-center-wrap">
-                            <span class="small-heading">WE CARE YOUR SKIN</span>
-                            <h2 class="heading color">change Your Life<br>Permanantly</h2>
-                            <a href="#" class="btn btn-outline  lighter"> read more</a>
+                            <span class="small-heading">CUIDAMOS DE TU PIEL</span>
+                            <h2 class="heading color">cambia tu vida<br>para siempre</h2>
+                            <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
                         </div>
                     </div>
                 </div>
@@ -72,10 +72,10 @@
                         <span class="custom-border-gap__border left"></span>
                         <span class="custom-border-gap__border right"></span>
                         <div class="service_title">
-                            <h3>BODY </h3>
-                            <p>
+                            <h3>CUERPO</h3>
+                            <!--<p>
                                 surgery
-                            </p>
+                            </p>-->
                         </div>    
                     </div>
                 </div>
@@ -86,10 +86,10 @@
                         <span class="custom-border-gap__border left"></span>
                         <span class="custom-border-gap__border right"></span>
                         <div class="service_title">
-                            <h3>FACE</h3>
-                            <p>
+                            <h3>CARA</h3>
+                            <!--<p>
                                 surgery
-                            </p>
+                            </p>-->
                         </div>    
                     </div>
                 </div>
@@ -100,10 +100,10 @@
                         <span class="custom-border-gap__border left"></span>
                         <span class="custom-border-gap__border right"></span>
                         <div class="service_title">
-                            <h3>INJECTION</h3>
-                            <p>
+                            <h3>PESO</h3>
+                            <!--<p>
                                 surgery
-                            </p>
+                            </p>-->
                         </div>    
                     </div>
                 </div>
@@ -114,23 +114,23 @@
                         <span class="custom-border-gap__border left"></span>
                         <span class="custom-border-gap__border right"></span>
                         <div class="service_title">
-                            <h3>Breasts</h3>
-                            <p>
+                            <h3>Pecho</h3>
+                            <!--<p>
                                 surgery
-                            </p>
+                            </p>-->
                         </div>    
                     </div>
                 </div>
             </div><!-- /col -->
-            <div class="col-xs-12">
+            <!--<div class="col-xs-12">
                 <a href="#" class="fancy-btn">VIEW ALL SERVICES</a>
-            </div>
+            </div>-->
 
         </div>
     </div>
 </section>
 
-<section class="about_doctor">
+<!--<section class="about_doctor">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-xs-12">
@@ -163,7 +163,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <section class="after_before_gallery">
     <div class="overlay sec-pad">
@@ -177,15 +177,15 @@
                         <div class="item">
                             <div class="gallery_col">
                                 <div class="before_bx">
-                                    <img src="themes/brooks/assets/img/resource/img-before-1.jpg" alt="">
+                                    <img src="themes/brooks/assets/img/before_after/img-before-1.jpg" alt="">
                                     <h3>ANTES</h3>
                                     <div class="sidebar-heading">
                                         <h4>ANTES</h4>
                                     </div>
                                 </div>
                                 <div class="after_bx">
-                                    <img src="themes/brooks/assets/img/resource/img-after-1.jpg" alt="">
-                                    <h3>después</h3>
+                                    <img src="themes/brooks/assets/img/before_after/img-after-1.jpg" alt="">
+                                    <h3>DESPUÉS</h3>
                                     <div class="sidebar-heading-rght">
                                         <h4>DESPUÉS</h4>
                                     </div>
@@ -196,17 +196,17 @@
                         <div class="item">
                             <div class="gallery_col">
                                 <div class="before_bx">
-                                    <img src="themes/brooks/assets/img/resource/img-before-1.jpg" alt="">
-                                    <h3>BEFORE</h3>
+                                    <img src="themes/brooks/assets/img/before_after/img-before-2.jpg" alt="">
+                                    <h3>ANTES</h3>
                                     <div class="sidebar-heading">
-                                        <h4>BEFORE</h4>
+                                        <h4>ANTES</h4>
                                     </div>
                                 </div>
                                 <div class="after_bx">
-                                    <img src="themes/brooks/assets/img/resource/img-after-1.jpg" alt="">
-                                    <h3>after</h3>
+                                    <img src="themes/brooks/assets/img/before_after/img-after-2.jpg" alt="">
+                                    <h3>DESPUÉS</h3>
                                     <div class="sidebar-heading-rght">
-                                        <h4>AFTER</h4>
+                                        <h4>DESPUÉS</h4>
                                     </div>
                                 </div>
                             </div>
@@ -215,17 +215,17 @@
                         <div class="item">
                             <div class="gallery_col">
                                 <div class="before_bx">
-                                    <img src="themes/brooks/assets/img/resource/img-before-1.jpg" alt="">
-                                    <h3>BEFORE</h3>
+                                    <img src="themes/brooks/assets/img/before_after/img-before-3.jpg" alt="">
+                                    <h3>ANTES</h3>
                                     <div class="sidebar-heading">
-                                        <h4>BEFORE</h4>
+                                        <h4>ANTES</h4>
                                     </div>
                                 </div>
                                 <div class="after_bx">
-                                    <img src="themes/brooks/assets/img/resource/img-after-1.jpg" alt="">
-                                    <h3>after</h3>
+                                    <img src="themes/brooks/assets/img/before_after/img-after-3.jpg" alt="">
+                                    <h3>DESPUÉS</h3>
                                     <div class="sidebar-heading-rght">
-                                        <h4>AFTER</h4>
+                                        <h4>DESPUÉS</h4>
                                     </div>
                                 </div>
                             </div>
@@ -233,17 +233,71 @@
                         <div class="item">
                             <div class="gallery_col">
                                 <div class="before_bx">
-                                    <img src="themes/brooks/assets/img/resource/img-before-1.jpg" alt="">
-                                    <h3>BEFORE</h3>
+                                    <img src="themes/brooks/assets/img/before_after/img-before-4.jpg" alt="">
+                                    <h3>ANTES</h3>
                                     <div class="sidebar-heading">
-                                        <h4>BEFORE</h4>
+                                        <h4>ANTES</h4>
                                     </div>
                                 </div>
                                 <div class="after_bx">
-                                    <img src="themes/brooks/assets/img/resource/img-after-1.jpg" alt="">
-                                    <h3>after</h3>
+                                    <img src="themes/brooks/assets/img/before_after/img-after-4.jpg" alt="">
+                                    <h3>DESPUÉS</h3>
                                     <div class="sidebar-heading-rght">
-                                        <h4>AFTER</h4>
+                                        <h4>DESPUÉS</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /item -->
+                        <div class="item">
+                            <div class="gallery_col">
+                                <div class="before_bx">
+                                    <img src="themes/brooks/assets/img/before_after/img-before-5.jpg" alt="">
+                                    <h3>ANTES</h3>
+                                    <div class="sidebar-heading">
+                                        <h4>ANTES</h4>
+                                    </div>
+                                </div>
+                                <div class="after_bx">
+                                    <img src="themes/brooks/assets/img/before_after/img-after-5.jpg" alt="">
+                                    <h3>DESPUÉS</h3>
+                                    <div class="sidebar-heading-rght">
+                                        <h4>DESPUÉS</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /item -->
+                        <div class="item">
+                            <div class="gallery_col">
+                                <div class="before_bx">
+                                    <img src="themes/brooks/assets/img/before_after/img-before-6.jpg" alt="">
+                                    <h3>ANTES</h3>
+                                    <div class="sidebar-heading">
+                                        <h4>ANTES</h4>
+                                    </div>
+                                </div>
+                                <div class="after_bx">
+                                    <img src="themes/brooks/assets/img/before_after/img-after-6.jpg" alt="">
+                                    <h3>DESPUÉS</h3>
+                                    <div class="sidebar-heading-rght">
+                                        <h4>DESPUÉS</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /item -->
+                        <div class="item">
+                            <div class="gallery_col">
+                                <div class="before_bx">
+                                    <img src="themes/brooks/assets/img/before_after/img-before-7.jpg" alt="">
+                                    <h3>ANTES</h3>
+                                    <div class="sidebar-heading">
+                                        <h4>ANTES</h4>
+                                    </div>
+                                </div>
+                                <div class="after_bx">
+                                    <img src="themes/brooks/assets/img/before_after/img-after-7.jpg" alt="">
+                                    <h3>DESPUÉS</h3>
+                                    <div class="sidebar-heading-rght">
+                                        <h4>DESPUÉS</h4>
                                     </div>
                                 </div>
                             </div>
@@ -278,7 +332,7 @@
                             </div>
                             <h3>100% Valoraciones positivas</h3>
                             <p>
-                               Lorem ipsum dolor sit amet cons ectetur elit Vestibulum nec odios cursus .
+                                La satisfacción de nuestros clientes es nuestra mejor carta de presentación, por eso ofrecemos atención y servicio personalizado.
                            </p>
                        </li>
 
@@ -288,7 +342,7 @@
                             </div>
                             <h3>Últimas tecnologías</h3>
                             <p>
-                               Lorem ipsum dolor sit amet cons ectetur elit Vestibulum nec odios cursus. 
+                               Últimas tendencias de la tecnología y la innovación, así como las tecnologías emergentes actuales y de futuro. 
                            </p>
                        </li>
 
@@ -298,7 +352,7 @@
                             </div>
                             <h3>Personal con máxima preparación</h3>
                             <p>
-                               Lorem ipsum dolor sit amet cons ectetur elit Vestibulum nec odios cursus.
+                               Nuestro equipo tiene la máxima preparación científico-técnica, con una atención de lo más personalizada y un afán innovador.
                            </p>
                        </li>
                    </ul>
@@ -319,9 +373,9 @@
                     {foreach from=$testimonials item=testimonial}   
                         <div class="item">
                             <div class="testimonial_bx">
-                                <div class="client-img">
+                                <!--<div class="client-img">
                                     <img src="themes/brooks/assets/img/resource/client-pic1.jpg" alt="">
-                                </div>
+                                </div>-->
                                 <div class="text-box">
                                     <div class="name">
                                         {$testimonial['title']|default:'Testimonio'}
@@ -331,7 +385,12 @@
                                     </p>
                                     <div class="drname">{$testimonial['nombre']}</div>
                                     <div class="rating">
-                                        <img src="themes/brooks/assets/img/resource/star-rating.png" alt="">
+                                        <!--<img src="themes/brooks/assets/img/resource/star-rating.png" alt="">-->
+                                        <i class="fa fa-star" aria-hidden="true" style="color: #fcd404;font-size: 27px"></i>
+                                        <i class="fa fa-star" aria-hidden="true" style="color: #fcd404;font-size: 27px"></i>
+                                        <i class="fa fa-star" aria-hidden="true" style="color: #fcd404;font-size: 27px"></i>
+                                        <i class="fa fa-star" aria-hidden="true" style="color: #fcd404;font-size: 27px"></i>
+                                        <i class="fa fa-star" aria-hidden="true" style="color: #fcd404;font-size: 27px"></i>
                                     </div>
                                 </div>
                             </div>
@@ -366,32 +425,27 @@
                 <div class="owl-carousel">
                     <div class="item">
                         <div class="client-img-holder">
-                            <img src="themes/brooks/assets/img/clients/1.png" alt="client">
+                            <img src="themes/brooks/assets/img/clients/carboxiterapia.png" alt="client">
                         </div>
                     </div>
                     <div class="item">
                         <div class="client-img-holder">
-                            <img src="themes/brooks/assets/img/clients/2.png" alt="client">
+                            <img src="themes/brooks/assets/img/clients/nanopore.png" alt="client">
                         </div>
                     </div>
                     <div class="item">
                         <div class="client-img-holder">
-                            <img src="themes/brooks/assets/img/clients/3.png" alt="client">
+                            <img src="themes/brooks/assets/img/clients/profhilo.png" alt="client" style="width: 150px;margin-top:40px">
                         </div>
                     </div>
                     <div class="item">
                         <div class="client-img-holder">
-                            <img src="themes/brooks/assets/img/clients/4.png" alt="client">
+                            <img src="themes/brooks/assets/img/clients/pronokal.png" alt="client">
                         </div>
                     </div>
                     <div class="item">
                         <div class="client-img-holder">
-                            <img src="themes/brooks/assets/img/clients/5.png" alt="client">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="client-img-holder">
-                            <img src="themes/brooks/assets/img/clients/6.png" alt="client">
+                            <img src="themes/brooks/assets/img/clients/shutterstock.png" alt="client">
                         </div>
                     </div>
                 </div>
@@ -431,33 +485,34 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="lts_blogpost_item">
-                    <div class="lts_blg_image">
+                    <!--<div class="lts_blg_image">
                         <img src="themes/brooks/assets/img/blog/l-news/l-news-1.jpg" alt="">
-                    </div>
+                    </div>-->
                     <div class="lts_blg_text">
                         <div class="author_rea_area">
                             <a href="/blog"><i class="fa fa-calendar"></i><span> {date("d", strtotime($blog_items[0]['date']))} {$monthsEs[date("m", strtotime($blog_items[0]['date']))]} {date("Y", strtotime($blog_items[0]['date']))}</span></a>
                             <!--<a href="/blog"><i class="fa fa-comments-o"></i><span>Comments:</span> 5</a>-->
                         </div>
                         <a href="/blog"><h2>{$blog_items[0]->title}</h2></a>
-                        <p>{substr($blog_items[0]->content, 0, 150)}...</p>
+                        <p>{substr($blog_items[0]->content, 0, 250)}...</p>
+                        <a href="/blog">LEER MÁS</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 {foreach key=key item=item from=$blog_items}
-                    {if $key >= 1}
-                        <div class="lts_blogpost_item" style='min-height: 145px'>
-                            <div class="lts_blg_sm_image">
+                    {if $key >= 1 && $key < 3}
+                        <div class="lts_blogpost_item"> <!--style='min-height: 145px'-->
+                            <!--<div class="lts_blg_sm_image">
                                 <img src="themes/brooks/assets/img/blog/l-news/l-news-2.jpg" alt="">
-                            </div>
+                            </div>-->
                             <div class="lts_blg_text padd-none">
                                 <div class="author_rea_area">
                                     <a href="#"><i class="fa fa-calendar"></i><span> {date("d", strtotime($item['date']))} {$monthsEs[date("m", strtotime($item['date']))]} {date("Y", strtotime($item['date']))}</span></a>
                                     <!--<a href="#"><i class="fa fa-comments-o"></i><span>Comments:</span> 5</a>-->
                                 </div>
-                                <a href="#"><h2>{$item['title']}</h2></a>
-                                <a href="#">LEER MÁS</a>
+                                <a href="/blog"><h2>{$item['title']}</h2></a>
+                                <a href="/blog">LEER MÁS</a>
                             </div>
                         </div><!-- / lts_blogpost_item-->
                         {if $key <= 2}<hr>{/if}

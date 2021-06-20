@@ -11,9 +11,6 @@
             {foreach from=$content item=testimonio}
                 <div class="col-md-6" {if $counter %2 == 1}style='clear: both;display: block'{/if}>
                     <div class="testimonial">
-                        <div class="pic">
-                            <img src="/themes/brooks/assets/img/resource/client-img.jpg">
-                        </div>
                         <p class="description">
                             {$testimonio['texto']}
                         </p>

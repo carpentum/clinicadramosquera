@@ -122,7 +122,7 @@
         <div class="container">
             <div class="footer_copyright_inner">
                 <div class="pull-left">
-                    <p>Copyright © 2020 All rights reserved. </p>
+                    <p>Copyright © {date("Y")} All rights reserved. </p>
                 </div>
                 <!--<div class="pull-right">
                     <h4>Created by: <a href="#">Themelab15</a></h4>

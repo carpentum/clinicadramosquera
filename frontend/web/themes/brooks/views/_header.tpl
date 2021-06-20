@@ -128,13 +128,7 @@
                                 <li><a href="/testimonios">Testimonios</a></li>
 
                                 <li><a href="/preguntas-frecuentes">Preguntas frecuentes</a></li>
-                                <li class="submenu dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="/blog">Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="/blog">Blog</a></li>
                                 <li><a href="{Yii::$app->urlManagerBackend->createUrl([''])}" target='_blank'>Admin</a></li>
                             </ul>
                         </li>
