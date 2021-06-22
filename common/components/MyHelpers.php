@@ -28,6 +28,21 @@ class MyHelpers
         '12' => 'diciembre',
     ];
     
+    const MONTHS_ES_ABBR = [
+        '01' => 'ene',
+        '02' => 'feb',
+        '03' => 'mar',
+        '04' => 'abr',
+        '05' => 'may',
+        '06' => 'jun',
+        '07' => 'jul',
+        '08' => 'ago',
+        '09' => 'sept',
+        '10' => 'oct',
+        '11' => 'nov',
+        '12' => 'dic',
+    ];
+    
     public static function getMonthsEs($key){
         return self::MONTHS_ES[$key];
     }
@@ -195,8 +210,8 @@ class MyHelpers
         $data = [];
         
         $data['service'] = MyHelpers::getContents($id);
-        $data['category'] =  MyHelpers::getContentCategories($data['service'][0]->id_category);
-        $data['category_services'] = MyHelpers::getContents('', $data['category'][0]->id);
+        $data['category'] =  MyHelpers::getContentCategories($data['service'][0]['id_category']);
+        $data['category_services'] = MyHelpers::getContents('', $data['category'][0]['id']);
         
         return $data;
         

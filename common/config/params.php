@@ -1,10 +1,9 @@
 <?php
 return [
     'adminEmail' => 'admin@example.com',
-    //'supportEmail' => 'info@clinicadramosquera.com',
-    'supportEmail' => 'ramon.mosquera@com',
-    'senderEmail' => 'noreply@example.com',
-    'senderName' => 'Example.com mailer',
+    'supportEmail' => 'info@clinicadramosquera.com',
+    'senderEmail' => 'info@clinicadramosquera.com',
+    'senderName' => 'Clínica Doctora Mosqeura',
     'user.passwordResetTokenExpire' => 3600,
     'user.passwordMinLength' => 8,
     'address' => 'Rúa Doutor Sixto Seco 9, 15401, Ferrol, A Coruña',

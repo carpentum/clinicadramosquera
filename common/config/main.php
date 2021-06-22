@@ -15,7 +15,10 @@ return [
         'user' => [
             'identityClass' => 'mdm\admin\models\User',
             'loginUrl' => ['site/login'],
-        ]
+        ],
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+        ],
     ],
     'modules' => [
         'admin' => [

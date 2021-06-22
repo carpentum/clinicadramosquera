@@ -102,7 +102,7 @@
                                                                 <ul class="menu-col">
                                                                     {foreach item=element from=$menu_contents['elements']}
                                                                         {if $element['id_category'] == $category->id}
-                                                                            <li><a href="/patologia/{MyHelpers::slugify($element['name'])}-{$element['id']}">{$element['name']}</a></li>
+                                                                            <li><a href="/tratamiento/{MyHelpers::slugify($element['name'])}-{$element['id']}">{$element['name']}</a></li>
                                                                         {/if}
                                                                     {/foreach}
                                                                 </ul>
@@ -124,17 +124,17 @@
                             </a>
                             <ul class="dropdown-menu">
 
-                                <li><a href="#">Promociones</a></li>
+                                <!--<li><a href="#">Promociones</a></li>-->
                                 <li><a href="/testimonios">Testimonios</a></li>
 
                                 <li><a href="/preguntas-frecuentes">Preguntas frecuentes</a></li>
                                 <li><a href="/blog">Blog</a></li>
-                                <li><a href="{Yii::$app->urlManagerBackend->createUrl([''])}" target='_blank'>Admin</a></li>
+                                <!--<li><a href="{Yii::$app->urlManagerBackend->createUrl([''])}" target='_blank'>Admin</a></li>-->
                             </ul>
                         </li>
                         <li><a href="/contacto">Contacto</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
+                    <!--<ul class="nav navbar-nav navbar-right">
                         <li class="search_dropdown">
                             <a href="#"><i class="icon icon-Search"></i></a>
                             <ul class="search">
@@ -150,7 +150,7 @@
                                 </li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul>-->
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>

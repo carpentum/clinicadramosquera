@@ -13,7 +13,7 @@
             </div>
         </div><!-- /col -->
         <div class="col-md-4 blue-brk">
-            <div class="outer_bx pd-l-80">
+            <div class="outer_bx">
                 <div class="icon">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
@@ -25,7 +25,7 @@
             </div>
         </div><!-- /col -->
         <div class="col-md-4">
-            <div class="outer_bx pd-l-40">
+            <div class="outer_bx">
                 <div class="icon">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>

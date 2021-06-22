@@ -1,4 +1,6 @@
 {use class="yii\helpers\Html"}
+{use class="yii\widgets\LinkPager"}
+
 {*@var $this yii\web\View*}
 
 {$this->renderFile("themes/brooks/views/_header.tpl", ['menu_contents' => $menu_contents])}
@@ -8,15 +10,15 @@
 <section class="main_blog_area">
     <div class="container">
         <div class="row main_blog_inner">
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="main_blog_items">
-                    {foreach from=$content item=blog_item}
+                    {foreach from=$news item=blog_item}
                         <div class="main_blogpost_item">
-                            {if ! empty($blog_item['image'])}
+                            {if ! empty($blog_item['image']) && file_exists(Yii::getAlias('@webroot')|cat:"/themes/brooks/assets/img/blog/news/"|cat:$blog_item['image'])}
                                 <div class="blog_image">
-                                    <img src="themes/brooks/assets/img/blog/blog-1.jpg{$blog_item['image']}" alt="">
+                                    <img src="/themes/brooks/assets/img/blog/news/{$blog_item['image']}" alt="{$blog_item['title']}">
                                     <div class="date">
-                                        <h5>05 <span>March</span></h5>
+                                        <h5>{date("d", strtotime($blog_item['date']))} <span>{$monthsEsAbbr[date("m", strtotime($blog_item['date']))]}</span></h5>
                                     </div>
                                 </div>
                             {/if}
@@ -35,7 +37,13 @@
                     
 
                 </div>
-                <nav aria-label="Page navigation" class="blog_pagination">
+                
+                <nav aria-label="Page navigation" class="blog_pagination">    
+                    {LinkPager::widget([
+                        'pagination' => $pagination
+                    ])}
+                </nav>
+                <!--<nav aria-label="Page navigation" class="blog_pagination">
                     <ul class="pagination">
                         <li class="active"><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
@@ -46,9 +54,9 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </nav>-->
             </div>
-            <div class="col-md-3">
+            <!--<div class="col-md-3">
                 <div class="blog_sidebar_area">
                     <aside class="mrgn_widget search_widget">
                         <div class="input-group">
@@ -56,7 +64,7 @@
                             <span class="input-group-btn">
                                 <button class="btn btn-default theme_color" type="button"><i class="icon icon-Search"></i></button>
                             </span>
-                        </div><!-- /input-group -->
+                        </div>
                     </aside>
                     <aside class="mrgn_widget categories_widget">
                         <div class="blog_widget_title">
@@ -108,7 +116,7 @@
                         </ul>
                     </aside>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </section>

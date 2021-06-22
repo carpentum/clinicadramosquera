@@ -46,6 +46,29 @@ section.non-index, div.non-index, .row.non-index {
     padding-top: 0;
 }
 
+.service_page h4 {
+    margin-top:30px;
+    margin-bottom:10px;
+}
+
+.blog_pagination li.disabled {
+    display: none
+}
+
+.main_blog_items .main_blogpost_item:not(:last-child) {
+    border-bottom: 1px solid #000;
+}
+
+.navbar-brand {
+    line-height: normal;
+    height: auto;
+}
+
+.navbar-brand img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 @media screen and (min-width: 993px) {
     .megamenu-content.patologias {
         left: 190px !important;

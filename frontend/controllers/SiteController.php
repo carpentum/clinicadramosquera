@@ -1,21 +1,25 @@
 <?php
 namespace frontend\controllers;
 
+use common\components\MyHelpers;
+use common\models\News;
+use common\models\LoginForm;
+use frontend\models\ContactForm;
+use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResendVerificationEmailForm;
+use frontend\models\ResetPasswordForm;
+use frontend\models\SignupForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\data\Pagination;
+use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
+use yii\helpers\Url;
+use yii\helpers\Html;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
-use common\models\LoginForm;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
-use frontend\models\ContactForm;
-use yii\helpers\Url;
-use common\components\MyHelpers;
+use yii\web\UrlManager;
 
 /**
  * Site controller
@@ -277,19 +281,37 @@ class SiteController extends Controller
         $menu_contents = MyHelpers::getMenuContents();
         
         //Default url: /frontend/web/index.php?r=site/about
-        
         //$this->registerCssFile("/path/to/your/file/in/web/folder/style.css");
-        
         //$this->params['breadcrumbs'][] = $this->title;
+        
+        $page_no = ( ! empty($_GET['page']) && is_int(intval($_GET['page'])) ) ? $_GET['page'] : 1;
         
         $content = MyHelpers::getBlogContent();
         
+        $query = News::find()
+                ->where(['status' => News::STATUS_PUBLISHED])
+                ->orderBy('date DESC');
+
+        $pagination = new Pagination([
+            'totalCount' => $query->count(), 
+            'pageSize' => 3,
+            'forcePageParam' => false,
+            'pageSizeParam' => false,
+            //'route' => "/blog/".Yii::$app->getRequest()->getQueryParam('page')
+        ]);
+
+        $news = $query->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+        
         return $this->render('/brooks/blog.tpl', [
             'menu_contents' => $menu_contents,
-            'content' => $content,
+            'news' => $news,
             'title' => 'Blog',
             'url'   => '/blog',
+            'monthsEsAbbr' => MyHelpers::MONTHS_ES_ABBR,
             'monthsEs'   => MyHelpers::MONTHS_ES,
+            'pagination' => $pagination
         ]);
     }
 
@@ -390,12 +412,49 @@ class SiteController extends Controller
         return $this->render('/brooks/servicio.tpl', [
             'menu_contents' => $menu_contents,
             'section' => 'Patologías',
-            'url'   => '/patologia/' . MyHelpers::slugify($servicio[0]->name) . "-" . $servicio[0]->id,
-            'title' => $category[0]->name,
+            'url'   => '/patologia/' . MyHelpers::slugify($servicio[0]['name']) . "-" . $servicio[0]['id'],
+            'title' => $category[0]['name'],
             'service' => $servicio[0],
             'category' => $category[0],
             'servicios_categoria' => $servicios_categoria,
             'tipo_url' => 'patologia'
+        ]);
+    }
+
+    /**
+     * Displays patologia page.
+     *
+     * @return mixed
+     */
+    public function actionTratamiento()
+    {
+        $menu_contents = MyHelpers::getMenuContents();
+        
+        $tratamiento_string = Yii::$app->request->get('id');
+        $tratamiento_array = explode("-", $tratamiento_string);
+        $tratamiento_id = $tratamiento_array[count($tratamiento_array) - 1];
+        
+        $service_data = MyHelpers::getServiceData($tratamiento_id);
+        
+        $servicio = $service_data['service'];
+        $category =  $service_data['category'];
+        $servicios_categoria = $service_data['category_services'];
+        
+        //Default url: /frontend/web/index.php?r=site/about
+        
+        //$this->registerCssFile("/path/to/your/file/in/web/folder/style.css");
+        
+        //$this->params['breadcrumbs'][] = $this->title;
+        
+        return $this->render('/brooks/servicio.tpl', [
+            'menu_contents' => $menu_contents,
+            'section' => 'Tratamientos',
+            'url'   => '/tratamiento/' . MyHelpers::slugify($servicio[0]['name']) . "-" . $servicio[0]['id'],
+            'title' => $category[0]['name'],
+            'service' => $servicio[0],
+            'category' => $category[0],
+            'servicios_categoria' => $servicios_categoria,
+            'tipo_url' => 'tratamiento'
         ]);
     }
 
