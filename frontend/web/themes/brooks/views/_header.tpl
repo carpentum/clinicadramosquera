@@ -25,13 +25,15 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
+                    <a href="https://www.facebook.com/clinicadramosquera" target="_blank" class="social-responsive"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://instagram.com/clinica_dra.mosquera" target="_blank" class="social-responsive social-responsive-last"><i class="fab fa-instagram-square"></i></a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="themes/brooks/assets/img/logo-white.png" alt=""></a>
+                    <a class="navbar-brand logo-white" href="#"><img src="themes/brooks/assets/img/logo-white.png" alt=""></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->

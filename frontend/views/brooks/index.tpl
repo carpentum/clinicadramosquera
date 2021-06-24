@@ -30,8 +30,7 @@
                 <div class="container">
                     <div class="carousel-captions caption-align-center">
                         <div class="caption-align-center-wrap">
-                            <span class="small-heading">CUIDAMOS DE TU PIEL</span>
-                            <h2 class="heading color">cambia tu vida<br>para siempre</h2>
+                            <h2 class="heading color">cuerpo perfecto</h2>
                             <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
                         </div>
                     </div>
@@ -46,8 +45,7 @@
                 <div class="container">
                     <div class="carousel-captions caption-align-center">
                         <div class="caption-align-center-wrap">
-                            <span class="small-heading">CUIDAMOS DE TU PIEL</span>
-                            <h2 class="heading color">cambia tu vida<br>para siempre</h2>
+                            <h2 class="heading color">siéntete bien<br>contigo misma</h2>
                             <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
                         </div>
                     </div>
@@ -62,8 +60,8 @@
                 <div class="container">
                     <div class="carousel-captions caption-align-center">
                         <div class="caption-align-center-wrap">
-                            <span class="small-heading">CUIDAMOS DE TU PIEL</span>
-                            <h2 class="heading color">cambia tu vida<br>para siempre</h2>
+                            <span class="small-heading">LA BELLEZA EMPIEZA</span>
+                            <h2 class="heading color">en el momento que decides ser<br>tú misma</h2>
                             <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
                         </div>
                     </div>

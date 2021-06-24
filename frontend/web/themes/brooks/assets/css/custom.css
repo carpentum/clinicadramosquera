@@ -69,7 +69,40 @@ section.non-index, div.non-index, .row.non-index {
     max-width: 100%;
 }
 
+.social-responsive {
+    display: inline-block;
+    color: #fff;
+    font-size: 27px;
+    margin-top: 26px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.social-responsive-last {
+    margin-right: 35px;
+}
+
+a.social-responsive:hover, a.social-responsive:focus {
+    color: #fff;
+}
+
+.navbar-toggle {
+    margin-top:26px!important;
+}
+
+@media screen and (max-width: 993px) {
+    .header_top {
+        display: none;
+    }
+    .logo-white {
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+}
 @media screen and (min-width: 993px) {
+    .social-responsive {
+        display:none;
+    }
     .megamenu-content.patologias {
         left: 190px !important;
         width: 70% !important;
