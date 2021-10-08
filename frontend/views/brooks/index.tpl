@@ -1,76 +1,76 @@
 {include file="themes/brooks/views/_header.tpl"}
-        
+
 <!--================Slider Area =================-->
 <section class="slider_area">
     <div class="container-fluid">
-    <div class="row">
-    <div class="col-lg-12">
-        <div class="owl-carousel">
-            <div class="item">
-                <div class="slide">
-                    <img src="themes/brooks/assets/img/home-slider/slide-01.jpg" alt="">
-                    <div class="slide-overlay"></div>
-                </div>
-                <div class="container">
-                    <div class="carousel-captions caption-align-center">
-                        <div class="caption-align-center-wrap">
-                            <span class="small-heading">CUIDAMOS DE TU PIEL</span>
-                            <h2 class="heading color">cambia tu vida<br>para siempre</h2>
-                            <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="slide">
+                            <img src="themes/brooks/assets/img/home-slider/slide-01.jpg" alt="">
+                            <div class="slide-overlay"></div>
                         </div>
-                    </div>
-                </div>
-            </div><!-- /item -->
+                        <div class="container">
+                            <div class="carousel-captions caption-align-center">
+                                <div class="caption-align-center-wrap">
+                                    <span class="small-heading">CUIDAMOS DE TU PIEL</span>
+                                    <h2 class="heading color">cambia tu vida<br>para siempre</h2>
+                                    <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /item -->
 
-            <div class="item">
-                <div class="slide">
-                    <img src="themes/brooks/assets/img/home-slider/slide-04.jpg" alt="">
-                    <div class="slide-overlay"></div>
-                </div>
-                <div class="container">
-                    <div class="carousel-captions caption-align-center">
-                        <div class="caption-align-center-wrap">
-                            <h2 class="heading color">cuerpo perfecto</h2>
-                            <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
+                    <div class="item">
+                        <div class="slide">
+                            <img src="themes/brooks/assets/img/home-slider/slide-04.jpg" alt="">
+                            <div class="slide-overlay"></div>
                         </div>
-                    </div>
-                </div>
-            </div><!-- /item -->
+                        <div class="container">
+                            <div class="carousel-captions caption-align-center">
+                                <div class="caption-align-center-wrap">
+                                    <h2 class="heading color">cuerpo perfecto</h2>
+                                    <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /item -->
 
-            <div class="item">
-                <div class="slide">
-                    <img src="themes/brooks/assets/img/home-slider/slide-02.jpg" alt="">
-                    <div class="slide-overlay"></div>
-                </div>
-                <div class="container">
-                    <div class="carousel-captions caption-align-center">
-                        <div class="caption-align-center-wrap">
-                            <h2 class="heading color">siéntete bien<br>contigo misma</h2>
-                            <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
+                    <div class="item">
+                        <div class="slide">
+                            <img src="themes/brooks/assets/img/home-slider/slide-02.jpg" alt="">
+                            <div class="slide-overlay"></div>
                         </div>
-                    </div>
-                </div>
-            </div><!-- /item -->
+                        <div class="container">
+                            <div class="carousel-captions caption-align-center">
+                                <div class="caption-align-center-wrap">
+                                    <h2 class="heading color">siéntete bien<br>contigo misma</h2>
+                                    <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /item -->
 
-            <div class="item">
-                <div class="slide">
-                    <img src="themes/brooks/assets/img/home-slider/slide-03.jpg" alt="">
-                    <div class="slide-overlay"></div>
-                </div>
-                <div class="container">
-                    <div class="carousel-captions caption-align-center">
-                        <div class="caption-align-center-wrap">
-                            <span class="small-heading">LA BELLEZA EMPIEZA</span>
-                            <h2 class="heading color">en el momento que decides ser<br>tú misma</h2>
-                            <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
+                    <div class="item">
+                        <div class="slide">
+                            <img src="themes/brooks/assets/img/home-slider/slide-03.jpg" alt="">
+                            <div class="slide-overlay"></div>
                         </div>
-                    </div>
+                        <div class="container">
+                            <div class="carousel-captions caption-align-center">
+                                <div class="caption-align-center-wrap">
+                                    <span class="small-heading">LA BELLEZA EMPIEZA</span>
+                                    <h2 class="heading color">en el momento que decides ser<br>tú misma</h2>
+                                    <!-- <a href="#" class="btn btn-outline  lighter"> read more</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /item -->
                 </div>
-            </div><!-- /item -->
+            </div>
+            </row>
         </div>
-    </div>
-</row>
-</div>
 </section>
 <!--================End Slider Area =================-->
 
@@ -125,7 +125,7 @@
                         <span class="custom-border-gap__border left"></span>
                         <span class="custom-border-gap__border right"></span>
                         <div class="service_title">
-                            <h3>Pecho</h3>
+                            <h3>Capilar</h3>
                             <!--<p>
                                 surgery
                             </p>-->
@@ -344,8 +344,8 @@
                             <h3>100% Valoraciones positivas</h3>
                             <p>
                                 La satisfacción de nuestros clientes es nuestra mejor carta de presentación, por eso ofrecemos atención y servicio personalizado.
-                           </p>
-                       </li>
+                            </p>
+                        </li>
 
                         <li>
                             <div class="widget-icon">
@@ -353,9 +353,9 @@
                             </div>
                             <h3>Últimas tecnologías</h3>
                             <p>
-                               Últimas tendencias de la tecnología y la innovación, así como las tecnologías emergentes actuales y de futuro. 
-                           </p>
-                       </li>
+                                Últimas tendencias de la tecnología y la innovación, así como las tecnologías emergentes actuales y de futuro. 
+                            </p>
+                        </li>
 
                         <li>
                             <div class="widget-icon">
@@ -363,11 +363,11 @@
                             </div>
                             <h3>Personal con máxima preparación</h3>
                             <p>
-                               Nuestro equipo tiene la máxima preparación científico-técnica, con una atención de lo más personalizada y un afán innovador.
-                           </p>
-                       </li>
-                   </ul>
-               </div>
+                                Nuestro equipo tiene la máxima preparación científico-técnica, con una atención de lo más personalizada y un afán innovador.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -476,8 +476,8 @@
                     <div class="video-bx">
                         <div class="video-image-box">
                             <figure class="image"><img src="{$video['preview_image']}" alt="{$video['title']}"> <a href="{$video['url']}" class="video-fancybox overlay-link lightbox-image">
-                                <div class="icon-border">
-                                    <span class=" fa fa-play"></span></div></a>
+                                    <div class="icon-border">
+                                        <span class=" fa fa-play"></span></div></a>
                             </figure>
                         </div>
                         <h3>{$video['title']}</h3>

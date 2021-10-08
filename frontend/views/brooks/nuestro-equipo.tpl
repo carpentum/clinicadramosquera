@@ -16,10 +16,10 @@
                         </div>
                         <div class="team-attrs">
                             <div class="team-name font-accident-two-bold-italic">Bea Mosquera</div>
-                            <div class="team-position">CEO y médico estético</div>
+                            <div class="team-position">Especialista en anestesia y reanimación y tratamiento del dolor</div>
                         </div>
                         <div class="team-content small">
-                            Truong is also the recipient of The George C. Lin Emerging Filmmaker Award from the San Diego
+                            Especialista en el área de cuidados intensivos de cirugía cardíaca. Especialista en medicina estética. Master realizado en la Universidad de Palma de Mallorca. Especialista en el área prehospitalario y emergencias.
                         </div>
                     </figure>
                 </div>
@@ -33,11 +33,11 @@
                             <img src="themes/brooks/assets/img/team/2.jpg" alt="Rachel James Johnes" class="img-responsive">
                         </div>
                         <div class="team-attrs">
-                            <div class="team-name font-accident-two-bold-italic">Iria</div>
-                            <div class="team-position">Médico estético</div>
+                            <div class="team-name font-accident-two-bold-italic">Iria Rodríguez</div>
+                            <div class="team-position">Especialista en anestesia reanimación y tratamiento del dolor.</div>
                         </div>
                         <div class="team-content small">
-                            Truong is also the recipient of The George C. Lin Emerging Filmmaker Award from the San Diego
+                            Máster en medicina estética.
                         </div>
                     </figure>
                 </div>
@@ -51,11 +51,11 @@
                             <img src="themes/brooks/assets/img/team/3.jpg" alt="Rachel James Johnes" class="img-responsive">
                         </div>
                         <div class="team-attrs">
-                            <div class="team-name font-accident-two-bold-italic">Valeria</div>
-                            <div class="team-position">Administración</div>
+                            <div class="team-name font-accident-two-bold-italic">Valeria Gisela Merlo</div>
+                            <div class="team-position">Auxiliar de clínica.</div>
                         </div>
                         <div class="team-content small">
-                            Truong is also the recipient of The George C. Lin Emerging Filmmaker Award from the San Diego
+                            Especialista en el área de medicina estética.
                         </div>
                     </figure>
                 </div>

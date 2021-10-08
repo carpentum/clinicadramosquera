@@ -2326,4 +2326,6 @@ i:before {
 }
 /* End Gallery*/
 
-
+.service_content_bx h2 {
+    text-transform: none;
+}

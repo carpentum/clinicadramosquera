@@ -33,7 +33,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand logo-white" href="#"><img src="themes/brooks/assets/img/logo-white.png" alt=""></a>
+                    <a class="navbar-brand logo-white" href="/"><img src="/themes/brooks/assets/img/logo-white.png" alt=""></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
