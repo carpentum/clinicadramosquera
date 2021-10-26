@@ -90,6 +90,10 @@ a.social-responsive:hover, a.social-responsive:focus {
     margin-top:26px!important;
 }
 
+.after_before_gallery .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+
 @media screen and (max-width: 993px) {
     .header_top {
         display: none;
@@ -125,5 +129,17 @@ a.social-responsive:hover, a.social-responsive:focus {
         line-height: 35px;
         padding-top: 9px;
         padding-bottom: 9px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .fluid-section-one .content-column{
+      position:relative;
+      float:none;
+      width:100%;
+    }
+
+    .after_before_gallery .owl-carousel {
+        padding: 0 20px;
     }
 }

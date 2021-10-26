@@ -132,6 +132,7 @@ class MyHelpers
         $categories = [];
         
         $query = Contents_categories::find()
+            ->where('status = 1')
             ->orderBy('name DESC');
         
         if ( ! empty($category_id) ) {
