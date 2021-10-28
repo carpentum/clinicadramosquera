@@ -79,7 +79,7 @@ section.non-index, div.non-index, .row.non-index {
 }
 
 .social-responsive-last {
-    margin-right: 35px;
+    margin-right: 10px;
 }
 
 a.social-responsive:hover, a.social-responsive:focus {
@@ -141,5 +141,11 @@ a.social-responsive:hover, a.social-responsive:focus {
 
     .after_before_gallery .owl-carousel {
         padding: 0 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-default .navbar-toggle {
+        margin-bottom: 0px;
     }
 }
