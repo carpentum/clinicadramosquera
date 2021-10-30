@@ -25,15 +25,22 @@
                 <div class="service_content_right_col">
                     <div class="tab-content">
                             <div class="service_content_bx">
-                                {if ! empty($service['image']) && file_exists(Yii::getAlias('@webroot')|cat:"/themes/brooks/assets/img/service/"|cat:$section|cat:"/"|cat:$service['image'])}
-                                    <div class="row">
+                                <div class="row">
+                                    {if ! empty($service['image']) && file_exists(Yii::getAlias('@webroot')|cat:"/themes/brooks/assets/img/service/"|cat:$section|cat:"/"|cat:$service['image'])}
                                         <div class="col-md-6">
                                             <div class="image_thumb">
                                                 <img src="/themes/brooks/assets/img/service/{$section|cat:"/"|cat:$service['image']}" alt="{$service['name']}">
                                             </div>
                                         </div>
-                                    </div>
-                                {/if}
+                                    {/if}
+                                    {if ! empty($service['video'])}
+                                        <div class="col-md-6">
+                                            <div class="youtube_video_container">
+                                                <iframe src="{$service['video']}" title="{$service['name']}" frameborder="0" class="youtube_video"></iframe>
+                                            </div>
+                                        </div>
+                                    {/if}
+                                </div>
 
                                 <h2>{$service['name']}</h2>
                                 <p>{$service['description']}</p>

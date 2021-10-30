@@ -130,6 +130,22 @@ ol {
     margin-bottom: 20px;
 }
 
+.youtube_video_container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-bottom: 20px;
+}
+
+.youtube_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 @media screen and (max-width: 993px) {
     .header_top {
         display: none;
