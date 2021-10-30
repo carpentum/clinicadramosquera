@@ -74,7 +74,7 @@
 </section>
 <!--================End Slider Area =================-->
 
-<section class="services">
+<section class="services hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-6">

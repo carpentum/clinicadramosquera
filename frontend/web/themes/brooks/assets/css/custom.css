@@ -94,6 +94,42 @@ a.social-responsive:hover, a.social-responsive:focus {
     background: transparent;
 }
 
+ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+.service_list {
+    padding-left:40px;
+}
+
+.unordered_service_list {
+    list-style:disc;
+}
+
+.service_content_bx {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: .34px;
+}
+
+.service_content_bx p {
+    padding-bottom: 0;
+}
+
+.service_content_bx h2 {
+    padding-top: 0;
+}
+
+.service_page {
+    padding: 20px 0px;
+}
+
+.service_content_bx .image_thumb {
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 993px) {
     .header_top {
         display: none;
