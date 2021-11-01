@@ -103,6 +103,10 @@ ol {
     padding-left:40px;
 }
 
+.service_list ul {
+    list-style-type: circle;
+}
+
 .unordered_service_list {
     list-style:disc;
 }
