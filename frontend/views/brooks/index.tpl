@@ -202,7 +202,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div><!-- /item -->
                         <div class="item">
                             <div class="gallery_col">
@@ -221,100 +220,8 @@
                                     </div>
                                 </div>
                             </div>
-
-                        </div><!-- /item -->
-                        <div class="item">
-                            <div class="gallery_col">
-                                <div class="before_bx">
-                                    <img src="themes/brooks/assets/img/before_after/img-before-3.jpg" alt="">
-                                    <h3>ANTES</h3>
-                                    <div class="sidebar-heading">
-                                        <h4>ANTES</h4>
-                                    </div>
-                                </div>
-                                <div class="after_bx">
-                                    <img src="themes/brooks/assets/img/before_after/img-after-3.jpg" alt="">
-                                    <h3>DESPUÉS</h3>
-                                    <div class="sidebar-heading-rght">
-                                        <h4>DESPUÉS</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- /item -->
-                        <div class="item">
-                            <div class="gallery_col">
-                                <div class="before_bx">
-                                    <img src="themes/brooks/assets/img/before_after/img-before-4.jpg" alt="">
-                                    <h3>ANTES</h3>
-                                    <div class="sidebar-heading">
-                                        <h4>ANTES</h4>
-                                    </div>
-                                </div>
-                                <div class="after_bx">
-                                    <img src="themes/brooks/assets/img/before_after/img-after-4.jpg" alt="">
-                                    <h3>DESPUÉS</h3>
-                                    <div class="sidebar-heading-rght">
-                                        <h4>DESPUÉS</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- /item -->
-                        <div class="item">
-                            <div class="gallery_col">
-                                <div class="before_bx">
-                                    <img src="themes/brooks/assets/img/before_after/img-before-5.jpg" alt="">
-                                    <h3>ANTES</h3>
-                                    <div class="sidebar-heading">
-                                        <h4>ANTES</h4>
-                                    </div>
-                                </div>
-                                <div class="after_bx">
-                                    <img src="themes/brooks/assets/img/before_after/img-after-5.jpg" alt="">
-                                    <h3>DESPUÉS</h3>
-                                    <div class="sidebar-heading-rght">
-                                        <h4>DESPUÉS</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- /item -->
-                        <div class="item">
-                            <div class="gallery_col">
-                                <div class="before_bx">
-                                    <img src="themes/brooks/assets/img/before_after/img-before-6.jpg" alt="">
-                                    <h3>ANTES</h3>
-                                    <div class="sidebar-heading">
-                                        <h4>ANTES</h4>
-                                    </div>
-                                </div>
-                                <div class="after_bx">
-                                    <img src="themes/brooks/assets/img/before_after/img-after-6.jpg" alt="">
-                                    <h3>DESPUÉS</h3>
-                                    <div class="sidebar-heading-rght">
-                                        <h4>DESPUÉS</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- /item -->
-                        <div class="item">
-                            <div class="gallery_col">
-                                <div class="before_bx">
-                                    <img src="themes/brooks/assets/img/before_after/img-before-7.jpg" alt="">
-                                    <h3>ANTES</h3>
-                                    <div class="sidebar-heading">
-                                        <h4>ANTES</h4>
-                                    </div>
-                                </div>
-                                <div class="after_bx">
-                                    <img src="themes/brooks/assets/img/before_after/img-after-7.jpg" alt="">
-                                    <h3>DESPUÉS</h3>
-                                    <div class="sidebar-heading-rght">
-                                        <h4>DESPUÉS</h4>
-                                    </div>
-                                </div>
-                            </div>
                         </div><!-- /item -->
                     </div>
-
                 </div>
             </div>
         </div>

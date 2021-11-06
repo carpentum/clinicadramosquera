@@ -150,6 +150,10 @@ ol {
     border: 0;
 }
 
+.after_before_gallery .sidebar-heading-rght {
+    right: -92px;
+}
+
 @media screen and (max-width: 993px) {
     .header_top {
         display: none;
