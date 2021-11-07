@@ -97,6 +97,8 @@ class SiteController extends Controller
         
         $blog_items = MyHelpers::getBlogContent(4);
         
+        $this->view->title = 'Clínica Doctora Mosquera';
+        
         //$this->layout = 'main'; //In case I want to overwrite the default layout
         return $this->render('/brooks/index.tpl', [
             'menu_contents' => $menu_contents,
@@ -151,6 +153,8 @@ class SiteController extends Controller
     {
         $menu_contents = MyHelpers::getMenuContents();
         
+        $this->view->title = 'Contacto';
+        
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['supportEmail'])) {
@@ -188,6 +192,8 @@ class SiteController extends Controller
         
         $content = MyHelpers::getStaticContent('about');
         
+        $this->view->title = 'Sobre nosotros';
+        
         return $this->render('/brooks/sobre-nosotros.tpl', [
             'menu_contents' => $menu_contents,
             'content' => $content,
@@ -210,6 +216,8 @@ class SiteController extends Controller
         //$this->registerCssFile("/path/to/your/file/in/web/folder/style.css");
         
         //$this->params['breadcrumbs'][] = $this->title;
+        
+        $this->view->title = 'Política de privacidad';
         
         $content = MyHelpers::getStaticContent('politica-de-privacidad');
         
@@ -238,6 +246,8 @@ class SiteController extends Controller
         
         $content = MyHelpers::getStaticContent('aviso-legal');
         
+        $this->view->title = 'Aviso legal';
+        
         return $this->render('/brooks/politica-de-privacidad.tpl', [
             'menu_contents' => $menu_contents,
             'content' => $content,
@@ -262,6 +272,8 @@ class SiteController extends Controller
         //$this->params['breadcrumbs'][] = $this->title;
         
         $content = MyHelpers::getTestimoniosContent();
+        
+        $this->view->title = 'Testimonios';
         
         return $this->render('/brooks/testimonios.tpl', [
             'menu_contents' => $menu_contents,
@@ -291,6 +303,8 @@ class SiteController extends Controller
         $query = News::find()
                 ->where(['status' => News::STATUS_PUBLISHED])
                 ->orderBy('date DESC');
+        
+        $this->view->title = 'Blog';
 
         $pagination = new Pagination([
             'totalCount' => $query->count(), 
@@ -330,6 +344,8 @@ class SiteController extends Controller
         
         //$this->params['breadcrumbs'][] = $this->title;
         
+        $this->view->title = 'La clínica';
+        
         return $this->render('/brooks/clinica.tpl', [
             'menu_contents' => $menu_contents,
             'url'   => '/clinica',
@@ -351,6 +367,8 @@ class SiteController extends Controller
         //$this->registerCssFile("/path/to/your/file/in/web/folder/style.css");
         
         //$this->params['breadcrumbs'][] = $this->title;
+        
+        $this->view->title = 'Nuestro equipo';
         
         return $this->render('/brooks/nuestro-equipo.tpl', [
             'menu_contents' => $menu_contents,
@@ -375,6 +393,8 @@ class SiteController extends Controller
         //$this->params['breadcrumbs'][] = $this->title;
         
         $faqs = MyHelpers::getFaq();
+        
+        $this->view->title = 'FAQ';
         
         return $this->render('/brooks/faq.tpl', [
             'menu_contents' => $menu_contents,
@@ -408,6 +428,8 @@ class SiteController extends Controller
         //$this->registerCssFile("/path/to/your/file/in/web/folder/style.css");
         
         //$this->params['breadcrumbs'][] = $this->title;
+        
+        $this->view->title = $servicio[0]['name'];
         
         return $this->render('/brooks/servicio.tpl', [
             'menu_contents' => $menu_contents,
@@ -445,6 +467,8 @@ class SiteController extends Controller
         //$this->registerCssFile("/path/to/your/file/in/web/folder/style.css");
         
         //$this->params['breadcrumbs'][] = $this->title;
+        
+        $this->view->title = $servicio[0]['name'];
         
         return $this->render('/brooks/servicio.tpl', [
             'menu_contents' => $menu_contents,

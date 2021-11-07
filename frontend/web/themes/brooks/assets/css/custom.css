@@ -116,10 +116,13 @@ ol {
     font-weight: 400;
     line-height: 28px;
     letter-spacing: .34px;
+    color:#173d50;
+    text-align: justify;
 }
 
 .service_content_bx p {
     padding-bottom: 0;
+    color:#173d50;
 }
 
 .service_content_bx h2 {
