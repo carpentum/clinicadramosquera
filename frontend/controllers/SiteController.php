@@ -405,6 +405,56 @@ class SiteController extends Controller
     }
 
     /**
+     * Displays patologias page.
+     *
+     * @return mixed
+     */
+    public function actionPatologias()
+    {
+        $menu_contents = MyHelpers::getMenuContents();
+        
+        //Default url: /frontend/web/index.php?r=site/about
+        
+        //$this->registerCssFile("/path/to/your/file/in/web/folder/style.css");
+        
+        //$this->params['breadcrumbs'][] = $this->title;
+        
+        $this->view->title = 'Patologías';
+        
+        return $this->render('/brooks/servicios.tpl', [
+            'menu_contents' => $menu_contents,
+            'title' => 'Patologías',
+            'url'   => '/patologias',
+            'type_name' => 'Patología'
+        ]);
+    }
+
+    /**
+     * Displays patologias page.
+     *
+     * @return mixed
+     */
+    public function actionTratamientos()
+    {
+        $menu_contents = MyHelpers::getMenuContents();
+        
+        //Default url: /frontend/web/index.php?r=site/about
+        
+        //$this->registerCssFile("/path/to/your/file/in/web/folder/style.css");
+        
+        //$this->params['breadcrumbs'][] = $this->title;
+        
+        $this->view->title = 'Tratamientos';
+        
+        return $this->render('/brooks/servicios.tpl', [
+            'menu_contents' => $menu_contents,
+            'title' => 'Tratamientos',
+            'url'   => '/tratamientos',
+            'type_name' => 'Tratamiento'
+        ]);
+    }
+
+    /**
      * Displays patologia page.
      *
      * @return mixed

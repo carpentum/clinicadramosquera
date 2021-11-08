@@ -65,6 +65,8 @@ return [
                 'preguntas-frecuentes'=>'site/preguntas',
                 'politica-de-privacidad'=>'site/politica',
                 'aviso-legal'=>'site/aviso',
+                'patologias'=>'site/patologias',
+                'tratamientos'=>'site/tratamientos',
                 '<alias:patologia|tratamiento>/<id:.*>'=>'site/<alias>',
                 '<controller>/<action>'=>'<controller>/<action>',
             ],

@@ -157,6 +157,23 @@ ol {
     right: -92px;
 }
 
+.services_page_content {
+    margin-bottom: 20px;
+}
+
+.services_page_content h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.services_page_content a {
+    display: block;
+    color:inherit;
+    line-height: 38px;
+    text-align:center;
+}
+
 @media screen and (max-width: 993px) {
     .header_top {
         display: none;

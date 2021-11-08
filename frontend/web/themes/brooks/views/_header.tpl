@@ -34,7 +34,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand logo-white" href="/"><img src="/themes/brooks/assets/img/logo-white.png" alt=""></a>
-                    <a href="tel:+34604025827" target="_blank" class="social-responsive" style="margin-top: 0;font-size: 14px;">Llámanos: 604 025 827</a>
+                    <a href="tel:+34604025827" target="_blank" class="social-responsive" style="margin-top: 0;font-size: 14px;">Tfno.: 604 025 827</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
