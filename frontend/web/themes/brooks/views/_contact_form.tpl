@@ -12,7 +12,7 @@
         {$form->field($model, 'body')->textarea(['rows' => 6, 'clases' => 'form-control', 'id' => 'body', 'placeholder' => 'Mensaje'])->label(false)}
 
         {$form->field($model, 'verifyCode')->widget(Captcha::className(), [
-            'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>'
+            'template' => '<div class="row"><div class="col-lg-3">{image}<span id="captcha-image-refreshtext">(Click en la imagen para cambiar texto)</span></div><div class="col-lg-6">{input}</div></div>'
         ])->label(false)}
         {Html::submitButton('Enviar', ['class' => 'fancy-btn', 'name' => 'contact-button'])}
     </div>

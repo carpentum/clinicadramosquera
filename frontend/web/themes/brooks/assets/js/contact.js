@@ -78,7 +78,16 @@ $(document).ready(function(){
                     }
                 })
             }
-        })
+        });
+        
+        $(function () {
+            //Processing click refresh verification code
+            $("#contactform-verifycode-image").on("click", function (e) {
+                e.preventDefault();
+                $(this).attr("src", "");
+                $(this).yiiCaptcha('refresh');
+            });
+        });
     })
         
  })(jQuery)
