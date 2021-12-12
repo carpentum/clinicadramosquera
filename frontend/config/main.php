@@ -67,6 +67,7 @@ return [
                 'aviso-legal'=>'site/aviso',
                 'patologias'=>'site/patologias',
                 'tratamientos'=>'site/tratamientos',
+                'sorteo'=>'site/sorteo',
                 '<alias:patologia|tratamiento>/<id:.*>'=>'site/<alias>',
                 '<controller>/<action>'=>'<controller>/<action>',
             ],

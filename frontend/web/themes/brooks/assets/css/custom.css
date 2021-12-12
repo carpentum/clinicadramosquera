@@ -184,6 +184,18 @@ ol {
     font-size:10px
 }
 
+a, a:focus, a:visited, a:hover {
+    color:#4899f2;
+}
+
+.faq_page_container{
+  padding: 50px 0 100px;
+}
+
+h4 {
+    line-height: 25px;
+}
+
 @media screen and (max-width: 993px) {
     .header_top {
         display: none;
@@ -191,6 +203,23 @@ ol {
     .logo-white {
         margin-top:5px;
         margin-bottom:5px;
+    }
+    
+    .sorteo-slide .small-heading {
+        font-size: 14px !important;
+        margin-top: 56px;
+        display: inline-block;
+    }
+    
+    .sorteo-slide h2.heading.color {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .sorteo-slide .btn-outline.lighter {
+        font-size: 16px;
+        text-transform: capitalize;
+        padding: 6px 15px;
     }
 }
 @media screen and (min-width: 993px) {
@@ -237,5 +266,9 @@ ol {
 @media (max-width: 991px) {
     .navbar-default .navbar-toggle {
         margin-bottom: 0px;
+    }
+    
+    section.non-index, div.non-index, .row.non-index {
+        margin-top: 64px;
     }
 }

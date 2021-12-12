@@ -20,6 +20,7 @@ use yii\helpers\Html;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\web\UrlManager;
+use yii\web\View;
 
 /**
  * Site controller
@@ -99,6 +100,16 @@ class SiteController extends Controller
         
         $this->view->title = 'Clínica Doctora Mosquera';
         
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Tu clínica de medicina estética en Ferrol'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'En la Clínica Doctora Mosquera te ofrecemos todos los tratamientos de belleza de la mano de los mejores profesionales.'
+        ]);
+        
         //$this->layout = 'main'; //In case I want to overwrite the default layout
         return $this->render('/brooks/index.tpl', [
             'menu_contents' => $menu_contents,
@@ -155,6 +166,16 @@ class SiteController extends Controller
         
         $this->view->title = 'Contacto';
         
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Formulario de contacto'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'Ponte en contacto con nosotros y te responderemos a la mayor brevedad.'
+        ]);
+        
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['supportEmail'])) {
@@ -193,6 +214,16 @@ class SiteController extends Controller
         $content = MyHelpers::getStaticContent('about');
         
         $this->view->title = 'Sobre nosotros';
+        
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Te contamos un poco sobre nosotros'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'La Clínica Doctora Mosquera brinda un servicio de calidad, corroborada por nuestros clientes.'
+        ]);
         
         return $this->render('/brooks/sobre-nosotros.tpl', [
             'menu_contents' => $menu_contents,
@@ -275,6 +306,16 @@ class SiteController extends Controller
         
         $this->view->title = 'Testimonios';
         
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Lee lo que opinan nuestros clientes'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'En la Clínica Doctora Mosquera nos preocupamos por el bienestar del cliente, poniendo todo nuestro esfuerzo para tengan plena satisfacción.'
+        ]);
+        
         return $this->render('/brooks/testimonios.tpl', [
             'menu_contents' => $menu_contents,
             'content' => $content,
@@ -318,6 +359,16 @@ class SiteController extends Controller
             ->limit($pagination->limit)
             ->all();
         
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Nuestras blog'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'En Clínica Doctora Mosquera queremos tenerte al día de todas nuestras noticias y novedades, para que siempre estés informad@.'
+        ]);
+        
         return $this->render('/brooks/blog.tpl', [
             'menu_contents' => $menu_contents,
             'news' => $news,
@@ -346,6 +397,16 @@ class SiteController extends Controller
         
         $this->view->title = 'La clínica';
         
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Conoce nuestra clínica'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'Te invitamos a conocer nuestra clínica... acompáñanos.'
+        ]);
+        
         return $this->render('/brooks/clinica.tpl', [
             'menu_contents' => $menu_contents,
             'url'   => '/clinica',
@@ -369,6 +430,16 @@ class SiteController extends Controller
         //$this->params['breadcrumbs'][] = $this->title;
         
         $this->view->title = 'Nuestro equipo';
+        
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Nuestro equipo'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'Queremos que nos conozcas, y por ello aquí nos presentamos.'
+        ]);
         
         return $this->render('/brooks/nuestro-equipo.tpl', [
             'menu_contents' => $menu_contents,
@@ -396,6 +467,16 @@ class SiteController extends Controller
         
         $this->view->title = 'FAQ';
         
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Preguntas frecuentes'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => '¿Tienes dudas? Aquí te aclaramos algunas de las que más nos consultáis.'
+        ]);
+        
         return $this->render('/brooks/faq.tpl', [
             'menu_contents' => $menu_contents,
             'url'   => '/preguntas-frecuentes',
@@ -421,6 +502,16 @@ class SiteController extends Controller
         
         $this->view->title = 'Patologías';
         
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Patologías'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'En la Clínica Doctora Mosquera tratamos con éxito una amplia variedad de patologías.'
+        ]);
+        
         return $this->render('/brooks/servicios.tpl', [
             'menu_contents' => $menu_contents,
             'title' => 'Patologías',
@@ -445,6 +536,16 @@ class SiteController extends Controller
         //$this->params['breadcrumbs'][] = $this->title;
         
         $this->view->title = 'Tratamientos';
+        
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Nuestros tratamientos'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'En la Clínica Doctora Mosquera ejecutamos con dedicación y éxito una gran variedad de tratamientos.'
+        ]);
         
         return $this->render('/brooks/servicios.tpl', [
             'menu_contents' => $menu_contents,
@@ -480,6 +581,16 @@ class SiteController extends Controller
         //$this->params['breadcrumbs'][] = $this->title;
         
         $this->view->title = $servicio[0]['name'];
+        
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - ' . $servicio[0]['name']
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'Clínica Doctora Mosquera - ' . $servicio[0]['name']
+        ]);
         
         return $this->render('/brooks/servicio.tpl', [
             'menu_contents' => $menu_contents,
@@ -519,6 +630,16 @@ class SiteController extends Controller
         //$this->params['breadcrumbs'][] = $this->title;
         
         $this->view->title = $servicio[0]['name'];
+        
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - ' . $servicio[0]['name']
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => 'Clínica Doctora Mosquera - ' . $servicio[0]['name']
+        ]);
         
         return $this->render('/brooks/servicio.tpl', [
             'menu_contents' => $menu_contents,
@@ -642,6 +763,43 @@ class SiteController extends Controller
 
         return $this->render('resendVerificationEmail', [
             'model' => $model
+        ]);
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionSorteo()
+    {
+        $menu_contents = MyHelpers::getMenuContents();
+        
+        //Default url: /frontend/web/index.php?r=site/about
+        
+        //$this->registerCssFile("/path/to/your/file/in/web/folder/style.css");
+        
+        //$this->params['breadcrumbs'][] = $this->title;
+        
+        $content = MyHelpers::getStaticContent('sorteo');
+        
+        $this->view->title = 'Sorteo - Participa!';
+        
+        $this->view->registerMetaTag([
+            'name' => 'title',
+            'content' => 'Clínica Doctora Mosquera - Participa en nuestro sorteo'
+        ]);
+        
+        $this->view->registerMetaTag([
+            'name' => 'description',
+            'content' => '¿Sabes que un peeling completo puede ser tuyo? En la Clínica Doctora Mosquera sorteamos uno. Consulta aquí las bases del sorteo.'
+        ]);
+        
+        return $this->render('/brooks/pagina-estatica.tpl', [
+            'menu_contents' => $menu_contents,
+            'content' => $content,
+            'title' => '¡Participa en nuestro sorteo!',
+            'url'   => '/sorteo',
         ]);
     }
 }

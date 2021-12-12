@@ -6,6 +6,21 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="owl-carousel">
+                    <div class="item sorteo-slide">
+                        <div class="slide">
+                            <img src="themes/brooks/assets/img/home-slider/sorteo.jpg" alt="">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="container">
+                            <div class="carousel-captions caption-align-center">
+                                <div class="caption-align-center-wrap">
+                                    <span class="small-heading">¡Participa en nuestro sorteo!</span>
+                                    <h2 class="heading color">Un peeling revitalizante<br>puede ser tuyo</h2>
+                                    <a href="/sorteo" class="btn btn-outline  lighter"> Infórmate aquí</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /item -->
                     <div class="item">
                         <div class="slide">
                             <img src="themes/brooks/assets/img/home-slider/slide-01.jpg" alt="">
