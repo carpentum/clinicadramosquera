@@ -29,6 +29,9 @@ AppAsset::register($this);
     <meta property="og:url" content="http://www.clinicadramosquera.com/">
     <meta property="og:site_name" content="Clínica Doctora Mosquera">
     
+    <meta name="twitter:title" content="Clínica de medicina estética Doctora Mosquera">
+    <meta name="twitter:description" content="Clínica de medicina estética en Ferrol.">
+    
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
