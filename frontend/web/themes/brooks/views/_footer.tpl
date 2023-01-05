@@ -112,6 +112,9 @@
                                 </ul>
 
                             </div>
+                            <div id="seme_wrapper">
+                                <script src="https://sello.seme.org/mosquera1743-e1egDI"></script>
+                            </div>
                         </div>
                     </aside>
                 </div>

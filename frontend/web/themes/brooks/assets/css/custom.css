@@ -196,6 +196,10 @@ h4 {
     line-height: 25px;
 }
 
+#seme_wrapper {
+    margin-top:20px;
+}
+
 @media screen and (max-width: 993px) {
     .header_top {
         display: none;

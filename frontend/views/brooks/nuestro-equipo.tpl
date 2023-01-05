@@ -12,7 +12,7 @@
                 <div class="team-member">
                     <figure class="effect-zoe">
                         <div class="team-photo">
-                            <img src="themes/brooks/assets/img/team/1.jpg" alt="Rachel James Johnes" class="img-responsive">
+                            <img src="themes/brooks/assets/img/team/1.jpg" alt="Bea Mosquera" class="img-responsive">
                         </div>
                         <div class="team-attrs">
                             <div class="team-name font-accident-two-bold-italic">Bea Mosquera</div>
@@ -30,7 +30,7 @@
                 <div class="team-member">
                     <figure class="effect-zoe">
                         <div class="team-photo">
-                            <img src="themes/brooks/assets/img/team/2.jpg" alt="Rachel James Johnes" class="img-responsive">
+                            <img src="themes/brooks/assets/img/team/2.jpg" alt="Iria Rodríguez" class="img-responsive">
                         </div>
                         <div class="team-attrs">
                             <div class="team-name font-accident-two-bold-italic">Iria Rodríguez</div>
@@ -48,7 +48,7 @@
                 <div class="team-member">
                     <figure class="effect-zoe">
                         <div class="team-photo">
-                            <img src="themes/brooks/assets/img/team/3.jpg" alt="Rachel James Johnes" class="img-responsive">
+                            <img src="themes/brooks/assets/img/team/3.jpg" alt="Valeria Gisela Merlo" class="img-responsive">
                         </div>
                         <div class="team-attrs">
                             <div class="team-name font-accident-two-bold-italic">Valeria Gisela Merlo</div>
