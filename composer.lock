@@ -4909,7 +4909,7 @@
     },
     {
       "name": "yiisoft/yii2-gii",
-      "version": "2.2.2",
+      "version": ">2.2.2",
       "source": {
         "type": "git",
         "url": "https://github.com/yiisoft/yii2-gii.git",
