@@ -13,7 +13,7 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         //Extra plugin css
-        'themes/brooks/assets/vendors/vendors/stroke-icon/style.css',
+        'themes/brooks/assets/vendors/stroke-icon/style.css',
         'themes/brooks/assets/css/style.css',
         'themes/brooks/assets/css/responsive.css',
         'themes/brooks/assets/css/set1.css',

@@ -15,7 +15,7 @@ class AnimateCssAsset extends AssetBundle
     public $basePath = '@app/themes/brooks/assets';
     public $baseUrl = '@web/../themes/brooks/assets';
     public $css = [
-        'vendors/animate-css/animate-css.css',
+        'vendors/animate-css/animate.css',
     ];
 
 }
