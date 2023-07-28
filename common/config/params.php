@@ -1,7 +1,7 @@
 <?php
 return [
     'adminEmail' => 'admin@example.com',
-    'supportEmail' => 'info@clinicadramosquera.com',
+    'supportEmail' => 'dra.mosqueradiaz@gmail.com',
     'senderEmail' => 'info@clinicadramosquera.com',
     'senderName' => 'Clínica Doctora Mosquera',
     'user.passwordResetTokenExpire' => 3600,
